@@ -1,3 +1,9 @@
+import numpy as np
+
+def calculateSE(data):
+    standardError = np.std(data,ddof=1) / np.sqrt(len(data) - 1)
+    return standardError
+
 def calculateFirstIntentStep(goalList):
     # 不要在函数里面转化数据 应该让函数通用
     goalList = eval(goalList)
@@ -43,7 +49,7 @@ def calculateFinalGoal(bean1GridX, bean1GridY, trajectory):
         finalGoal = 2
     return finalGoal
 
-# 同上 简化 具体做法是把goallist reverse就可以了
+# 同上 简化 具体做法是用reversed算goallist
 def calculateFirstIntentGoalAccord(finalGoal, goalList):
     firstIntentStep = calculateFirstIntentStep(goalList)
     if firstIntentStep != len(eval(goalList)):
