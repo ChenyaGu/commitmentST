@@ -1,8 +1,6 @@
 数据：
 human
-maxNoise0(chengshaozhe/commitmentST/src/modelExperiment.py    policy=noise0WolfToTwoSheepNoiseOneStepGird15_policy)
-maxNoise0.1(程序同上，policy=noise0.1WolfToTwoSheepNoiseOneStepGird15_policy)
-softmax
+maxModel
 
 数据分析：
 dataAnalysis
@@ -23,9 +21,4 @@ plotGoalCommitment
 plotFirstIntentGoalAccord
 plotFirstIntentStepRatio
 plotIsTimeMaxNextNoisePoint
-分别对应上述四个函数，误差棒使用标准误SE
-
-分析结果：
-charts
-Ver1.0:对比human、max(使用maxNoise0数据)、softmax
-Ver2.0:对比human、maxNoise0、maxNoise0.1
+分别对应上述四个函数，误差线使用标准误SE
